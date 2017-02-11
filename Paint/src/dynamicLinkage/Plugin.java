@@ -23,7 +23,7 @@ public class Plugin {
 		try {
 			 url = newJar.toURI().toURL();
 			 ucl = new URLClassLoader(new URL[] { url });
-			loadedClass = ucl.loadClass("eg.edu.alexu.csd.oop.paint.Triangle");
+			loadedClass = ucl.loadClass("shapes.Triangle");
 			constructor = loadedClass.getConstructors();
 			JOptionPane.showMessageDialog(null, "Class Loaded Successfully", "Warning", JOptionPane.PLAIN_MESSAGE);
 		} catch (Exception e) {
