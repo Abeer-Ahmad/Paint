@@ -32,10 +32,13 @@ public class XMLReader {
 			InputStream is = new FileInputStream(loadSheet);
 
 			if (p.downloaded) {
+				
+				
 				stream.setClassLoader(p.loadClasses().getClassLoader());
 			}
+			
 			ArrayList<Shape> shapes = (ArrayList<Shape>) stream.fromXML(is);
-
+			
 			is.close();
 			return shapes;
 		} catch (Exception e) {

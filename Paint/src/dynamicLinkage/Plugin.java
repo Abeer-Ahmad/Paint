@@ -33,7 +33,7 @@ public class Plugin {
 	}
 
 	public Shape createTriangle(Color fillClr, BasicStroke thickness, Color layoutClr, Point[] dim) {
-		System.out.println("length = " + constructor.length);
+		
 		try {
 			Shape triangle = (Shape) constructor[0].newInstance(fillClr, thickness, layoutClr, dim);
 			//System.out.println(constructor[0].getClass().getSimpleName());
